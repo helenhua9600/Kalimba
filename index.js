@@ -1,8 +1,9 @@
+// listener for keyboard key presses in the entire doc
+document.addEventListener("keydown", handleKeyboardPress);
 
-
+// listener for mouse clicks on all kalimba keys
 for (var i = 0; i < document.querySelectorAll(".keys").length; i++) {
   document.querySelectorAll(".keys")[i].addEventListener("click", handleClick);
-  
 }
 
 function handleClick() {
@@ -15,79 +16,100 @@ function handleClick() {
   playNote(note);
 } 
 
+function handleKeyboardPress(buttonPressed) {
+  // alert(buttonPressed.key);
+  playNote(buttonPressed.key);
+}
+
 function playNote(notePressed) {
   
   switch (notePressed) {
     
     case "1":
-      var audio = new Audio("sounds/1.mp3")
+      var audio = new Audio("sounds/1.mp3");
       audio.play();
       break;
     case "2":
-        var audio = new Audio("sounds/2.mp3")
+    case "q":
+        var audio = new Audio("sounds/2.mp3");
         audio.play();
         break;
     case "3":
-      var audio = new Audio("sounds/3.mp3")
+    case "a":
+      var audio = new Audio("sounds/3.mp3");
       audio.play();
       break;
     case "4":
-      var audio = new Audio("sounds/4.mp3")
+    case "z":  
+      var audio = new Audio("sounds/4.mp3");
       audio.play();
       break;
     case "5":
-      var audio = new Audio("sounds/5.mp3")
+    case "x":
+      var audio = new Audio("sounds/5.mp3");
       audio.play();
       break;
     case "6":
-      var audio = new Audio("sounds/6.mp3")
+    case "c":
+      var audio = new Audio("sounds/6.mp3");
       audio.play();
       break;
     case "7":
-      var audio = new Audio("sounds/7.mp3")
+    case "v":
+      var audio = new Audio("sounds/7.mp3");
       audio.play();
       break;
     case "8":
-      var audio = new Audio("sounds/8.mp3")
+    case "b":
+      var audio = new Audio("sounds/8.mp3");
       audio.play();
       break;
     case "9":
-      var audio = new Audio("sounds/9.mp3")
+    case " ":
+      var audio = new Audio("sounds/9.mp3");
       audio.play();
       break;
     case "10":
-        var audio = new Audio("sounds/10.mp3")
+    case "n":
+        var audio = new Audio("sounds/10.mp3");
         audio.play();
         break;
     case "11":
-      var audio = new Audio("sounds/11.mp3")
+    case "m":
+      var audio = new Audio("sounds/11.mp3");
       audio.play();
       break;
     case "12":
-      var audio = new Audio("sounds/12.mp3")
+    case "\,":
+      var audio = new Audio("sounds/12.mp3");
       audio.play();
       break;
     case "13":
-      var audio = new Audio("sounds/13.mp3")
+    case "\.":
+      var audio = new Audio("sounds/13.mp3");
       audio.play();
       break;
     case "14":
-      var audio = new Audio("sounds/14.mp3")
+    case "\/":
+      var audio = new Audio("sounds/14.mp3");
       audio.play();
       break;
     case "15":
-      var audio = new Audio("sounds/15.mp3")
+    case "\'":
+      var audio = new Audio("sounds/15.mp3");
       audio.play();
       break;
     case "16":
-      var audio = new Audio("sounds/16.mp3")
+    case "\]":
+      var audio = new Audio("sounds/16.mp3");
       audio.play();
       break; 
     case "17":
-      var audio = new Audio("sounds/17.mp3")
+    case "\\":
+      var audio = new Audio("sounds/17.mp3");
       audio.play();
       break; 
-    default: alert("error");
+    default: console.log("error");
   }
   
 }
