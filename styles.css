@@ -1,3 +1,8 @@
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
 .kalimba {
   background-color: #f8b0bf;
   height: 1000px;
@@ -5,10 +10,88 @@
   flex-direction: row;
   align-items: start;
   justify-content: center;
-}
+  font-family: 'Montserrat', sans-serif;}
 
 .keys {
   width: 105px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  
 }
 
+p {
+  margin-bottom: 30px ;
+  font-size: 28px;
+  
+}
+
+.one {
+  background-image: url("images/1.png");
+  height:471px;
+}
+.two {
+  background-image: url("images/2.png");
+  height:487px;
+}
+.three {
+  background-image: url("images/3.png");
+  height:511px;
+}
+.four {
+  background-image: url("images/4.png");
+  height:533px;
+}
+.five {
+  background-image: url("images/5.png");
+  height:570px;
+}
+.six {
+  background-image: url("images/6.png");
+  height:615px;
+}
+.seven {
+  background-image: url("images/7.png");
+  height:661px;
+}
+.eight {
+  background-image: url("images/8.png");
+  height:711px;
+}
+.nine {
+  background-image: url("images/9.png");
+  height:747px;
+}
+.ten {
+  background-image: url("images/10.png");
+  height:673px;
+}
+.eleven {
+  background-image: url("images/11.png");
+  height:628px;
+}
+.twelve {
+  background-image: url("images/12.png");
+  height:580px;
+}
+.thirteen {
+  background-image: url("images/13.png");
+  height:549px;
+}
+.fourteen {
+  background-image: url("images/14.png");
+  height:525px;
+}
+.fifteen {
+  background-image: url("images/15.png");
+  height:499px;
+}
+.sixteen {
+  background-image: url("images/16.png");
+  height:480px;
+}
+.seventeen {
+  background-image: url("images/17.png");
+  height:464px;
+}

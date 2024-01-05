@@ -11,7 +11,7 @@ function handleClick() {
   // find what note is played
   var classes = this.className; // always returns in format "keys [note]"
 
-  var note = classes.substring(5);
+  var note = classes.substring(5,6);
 
   playNote(note);
 } 
