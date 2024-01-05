@@ -1,0 +1,14 @@
+.kalimba {
+  background-color: #f8b0bf;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+
+.keys {
+  width: 105px;
+  height: auto;
+}
+
